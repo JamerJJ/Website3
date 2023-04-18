@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CA_Jubanski.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="jquery.js"></script>  
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">    
+    </asp:ContentPlaceHolder>         
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <!-- Header Start -->
+        <header>
+            <div class="namecafe">
+            <h1> Tech Cafe </h1>
+            </div>
+        </header>
+        <!--header End-->
+
+        <!--Nav Start-->
+        <nav>
+            <div>  
+                <ul>
+                    <li><a href="Default.aspx" >Home</a></li>
+                    <li><a href="Address.aspx" >Address</a></li>
+                    <li><a href="Ourhistory.aspx" >Our History</a></li>
+                    <li><a href="Members.aspx">Staff</a></li>                                      
+                    <li><a href="FAQ.aspx">FAQ</a></li>
+                    <li><a href="Register.aspx">Register/Login</a></li>
+                </ul>     
+            </div>
+        </nav> 
+        <!--Nav End-->
+        
+            
+
+        <!--Content 1 Start-->
+
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                                      
+
+            </asp:ContentPlaceHolder>
+
+            <!--Content 1 end-->
+                                 
+                       
+            </div>
+
+
+            <!--Footer Start-->
+
+            <footer>
+                <div>
+                    <div style="position:relative;display:inline-block;padding-left:39px;padding-right:39px">
+                        <a title="RSS" style="position:absolute;bottom:40px;left:120px" href="https://www.facebook.com/"><p><img src="/images/iconface.jpg" style="width:42px;height:42px;"></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a style="position:absolute;bottom:40px;left:170px" href="https://www.instagram.com/"><p><img src="/images/iconinsta.jpg" style="width:42px;height:42px;"></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<a style="position:absolute;bottom:40px;left:220px" href="https://twitter.com/?lang=en"><p><img src="/images/icontwi.jpg" style="width:42px;height:42px;"></a>
+
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Copyright © 2022. All Rights Reserved.</p></div>
+                </div>
+            </footer> 
+            <!--Footer End-->
+
+
+        
+    </form>
+
+
+</body>
+</html>

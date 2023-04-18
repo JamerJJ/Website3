@@ -1,0 +1,316 @@
+﻿
+header {
+    background-image: url('images/coffeheart.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 335px;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-image: url('images/black-and-white-gradient-background.jpg');
+    background-repeat: repeat-x;
+    background-color: #FEFEFE;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #23140d;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+    nav li a {
+        
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px 16px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: inline;
+        padding: 16px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    nav li a:hover {
+        background-color: #23140d;
+        color: black;
+    }
+
+div.content {
+    color:black;
+    padding: 10px;
+}
+
+h1, h2 {
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div.image{
+    text-align:left;
+    background-image: url('images/coffeelayout.jpg');
+    background-repeat: no-repeat;
+    height: 335px;
+}
+
+/*Table prices*/
+div.tablecoffee{
+    width: 100%;
+    text-align: center;
+    padding: 8px;
+       
+}
+th, td{
+    width:500px;
+    height:auto;
+    padding:8px;
+}
+
+div.tablecoffee tr:nth-child(even) {
+    background-color: #4d3a3a
+}
+
+/*css table register*/
+#tblregister {
+    text-align:center;
+}
+/*css button login and register*/
+#ContentPlaceHolder1_btnSubmit {
+    background-color: #23140d;
+    color:antiquewhite;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+#ContentPlaceHolder1_btnLogin {
+    background-color: #23140d;
+    color: antiquewhite;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+/*end*/
+
+
+/*Members side by side*/
+div.members {
+    color: black;
+    margin: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.right-column {
+    
+    height: 300px;  
+    text-align:center;
+}
+
+.left-column {   
+    text-align:center;
+    height: 300px;
+}
+
+div.linktomaps{
+    padding: 20px;
+}
+
+/*Food images*/
+* {
+    box-sizing: border-box;
+}
+.row-food {
+    margin: 8px -16px;
+    color: black;
+}
+
+    
+    .row-food,
+    .row-food > .column {
+        padding: 8px;
+    }
+
+
+.column-food {
+    float: left;
+    width: 25%;
+}
+
+
+.row-food:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.content-food {
+    background-color: white;
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .column-food {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .column-food {
+        width: 100%;
+    }
+}
+/*End food images*/
+
+/*Image slide*/
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+    
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 180px;
+    width: 100%;
+    left:500px;
+    
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+
+
+
+footer {
+    background-color: #23140d;
+    padding: 10px;
+    color: #f2f2f2;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    left: 450px;
+    width: 200px;
+    height: 100px;
+    
+}
+
+/*Links*/
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
